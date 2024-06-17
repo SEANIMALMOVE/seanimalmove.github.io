@@ -235,6 +235,7 @@ a:hover {
 
 .news-item {
     flex: 1;
+    width: 80%;
     min-width: 250px; /* Ajusta el ancho mínimo de las tarjetas */
     border: 1px solid #a7d4ff; /* Borde de las tarjetas */
     padding: 15px; /* Espaciado interno de las tarjetas */
@@ -245,14 +246,25 @@ a:hover {
     margin-top: 0;
 }
 
-.news-item a {
-    display: inline-block;
-    margin-top: 10px;
-}
-
 .news-item img {
     max-width: 100%; /* Asegura que la imagen no exceda el ancho de su contenedor */
     height: auto; /* Mantiene la proporción de la imagen */
     display: block; /* Evita que la imagen tenga espacio extra debajo */
     margin: 0 auto; /* Centra la imagen si no ocupa el ancho completo */
+}
+
+.news-item p {
+    text-align: justify; /* Justifica el texto dentro de .news-item */
+}
+
+.news-item a {
+    display: block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    text-align: center;
+    margin-top: 10px;
 }
