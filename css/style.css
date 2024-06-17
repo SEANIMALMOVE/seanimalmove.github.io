@@ -102,6 +102,74 @@ a:hover {
     color: #ff6347; /* Cambia este color según prefieras */
 }
 
+
+/*
+===================================================================
+                            INDEX
+===================================================================
+*/
+
+.features-container {
+    display: flex;
+    justify-content: space-around; /* Distribuye el espacio entre las secciones */
+    flex-wrap: wrap; /* Permite que las secciones se ajusten en filas según el ancho de la pantalla */
+}
+
+.feature-box {
+    flex: 1; /* Permite que las cajas se expandan para ocupar el espacio disponible */
+    margin: 10px; /* Añade un poco de espacio alrededor de las cajas */
+    max-width: 45%; /* Limita el ancho máximo de las cajas para evitar que sean demasiado grandes */
+    text-align: center;
+    border: 2px solid #b7edff; /* Establece un borde sólido celeste */
+    border-radius: 5px; /* Opcional: añade bordes redondeados */
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-box img {
+    width: 100%; /* Asegura que la imagen se expanda para cubrir el ancho del contenedor */
+    height: 400px; /* Establece una altura fija para todas las imágenes */
+    object-fit: cover; /* Asegura que la imagen cubra el espacio asignado sin distorsionarse */
+    border-radius: 5px;
+    margin-bottom: 20px; /* Espacio debajo de la imagen */
+}
+
+/* Asegura que el contenido textual se alinee en la parte inferior */
+.feature-box div.text-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/* Ajustes adicionales para centrar el contenido y mejorar la presentación */
+.feature-box h3, .feature-box p, .feature-box a {
+    text-align: center;
+    margin-top: 20px; /* Ajusta según sea necesario para uniformizar el espacio debajo de las imágenes */
+}
+
+.feature-box a {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.feature-box a:hover {
+    background-color: #0056b3;
+}
+
+
+
+/*
+===================================================================
+                            TEAM
+===================================================================
+*/
+
 .team-container {
     display: flex;
     flex-wrap: wrap;
@@ -148,6 +216,15 @@ a:hover {
     margin-bottom: 0; /* Reduce o elimina el margen inferior del nombre */
 }
 
+
+
+
+
+/*
+===================================================================
+                            RESEARCH / NEWS
+===================================================================
+*/
 
 
 .news-container {
