@@ -101,3 +101,49 @@ main {
 a:hover {
     color: #ff6347; /* Cambia este color según prefieras */
 }
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Esto asegura un espaciado uniforme y que los elementos se centren */
+    gap: 20px; /* Espacio entre los elementos */
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente (útil si hay espacio adicional) */
+    gap: 20px; /* Mantiene el espacio entre los elementos */
+}
+
+.team-member {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1; /* Esto permite que los elementos crezcan para llenar el espacio disponible */
+    min-width: 250px; /* Mínimo ancho antes de que el elemento pase a la siguiente fila */
+    max-width: 300px; /* Máximo ancho del elemento */
+    text-align: center;
+    margin-bottom: 20px; /* Espacio adicional en la parte inferior, si es necesario */
+}
+
+.team-photo {
+    width: 80%; /* Hace que la foto se ajuste al contenedor .team-member */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 10px; /* Centra la imagen y añade margen en la parte inferior */
+}
+
+.team-area, .team-role {
+    font-size: 0.8rem; /* Reduce el tamaño de la fuente */
+    margin-top: 2px; /* Reduce el espacio superior */
+    margin-bottom: 2px; /* Reduce el espacio inferior */
+}
+
+.team-member h3 {
+    margin-bottom: 0; /* Reduce o elimina el margen inferior del nombre */
+}
