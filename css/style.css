@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+header, main, footer {
+    padding: 20px;
+}
+
+header, header a {
+    color: white !important;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    flex-shrink: 0;
+}
+
+
+/* Centrar el título principal */
+h1 {
+    text-align: center;
+}
+
+/* Centrar el menú */
+nav {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav a {
+    margin: 0 15px; /* Ajusta el espaciado entre los elementos del menú según necesites */
+    text-decoration: none;
+    color: #000; /* Cambia el color según tu diseño */
+}
+
+nav a:hover {
+    color: #ff6347; /* Mantenemos el efecto hover para los enlaces del menú */
+}
+
+
+/* Establecer la imagen de fondo */
+body {
+    background-image: url('../assets/images/main_background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Estilo para <main> */
+main {
+    flex: 1;
+    width: 80%; /* O el ancho que prefieras */
+    margin: 20px auto; /* Centra el recuadro horizontalmente y añade margen superior e inferior */
+    background-color: rgba(255, 255, 255, 0.8); /* Blanco con transparencia para ver la imagen de fondo */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opcional: añade sombra para resaltar el recuadro */
+    border-radius: 10px; /* Opcional: bordes redondeados */
+}
+
+
+/* Animación para imágenes */
+.animate-image {
+    transition: transform 0.5s ease;
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen */
+}
+
+/* Cambio de color de enlaces al pasar el ratón */
+a:hover {
+    color: #ff6347; /* Cambia este color según prefieras */
+}
