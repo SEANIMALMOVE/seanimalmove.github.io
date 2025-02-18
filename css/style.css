@@ -234,12 +234,11 @@ a:hover {
 }
 
 .news-item {
-    flex: 1;
-    width: 80%;
-    min-width: 250px; /* Ajusta el ancho mínimo de las tarjetas */
+    flex: 1 1 calc(50% - 20px); /* Ajusta el ancho de las tarjetas para que ocupen el 50% menos el espacio del gap */
     border: 1px solid #a7d4ff; /* Borde de las tarjetas */
     padding: 15px; /* Espaciado interno de las tarjetas */
     border-radius: 5px; /* Bordes redondeados */
+    box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el ancho total */
 }
 
 .news-item h3 {
