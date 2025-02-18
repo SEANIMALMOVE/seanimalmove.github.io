@@ -198,10 +198,10 @@ a:hover {
 }
 
 .team-photo {
-    width: 80%; /* Hace que la foto se ajuste al contenedor .team-member */
-    height: auto; /* Mantiene la proporción de la imagen */
+    width: 150px; /* Ajusta el ancho según tus necesidades */
+    height: 150px; /* Ajusta la altura según tus necesidades */
     border-radius: 50%;
-    object-fit: cover;
+    object-fit: cover; /* Asegura que la imagen cubra el espacio asignado sin distorsionarse */
     display: block;
     margin: 0 auto 10px; /* Centra la imagen y añade margen en la parte inferior */
 }
