@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi trabajo en SEANIMALMOVE</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Mi rol en SEANIMALMOVE</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Sobre el Proyecto</a></li>
+                <li><a href="research.html">Investigación</a></li>
+                <li><a href="team.html">Equipo</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <!-- Presentación personal -->
+        <section class="profile-section">
+            <div class="profile-container">
+                <img src="https://pbs.twimg.com/profile_images/1789979244275085312/-gII55Vy_400x400.jpg" alt="Alba Márquez-Rodríguez" class="team-photo">
+                <div class="profile-text">
+                    <h2>Alba Márquez Rodríguez</h2>
+                    <p>Soy investigadora contratada en el proyecto SEANIMALMOVE (Universidad de Cádiz / INMAR), centrado en la monitorización de vertebrados marinos y costeros en un contexto de cambio global. Mi perfil combina la ingeniería informática, en concreto la inteligencia artificial, con la monitorización y conservación de la biodiversidad. El proyecto SEANIMALMOVE se articula en dos líneas principales: la monitorización de mamíferos marinos y el estudio de aves.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de mamíferos marinos -->
+        <section>
+            <h2>Monitorización acústica submarina de mamíferos marinos</h2>
+            <p>
+                En el caso de los mamíferos marinos, empleamos <strong>monitorización acústica pasiva</strong> (PAM, por sus siglas en inglés). Estos animales viven en un mundo acústico: el sonido es esencial para comunicarse, orientarse, encontrar alimento y detectar amenazas. La PAM nos permite registrar su presencia y comportamiento de forma continua, no invasiva y en cualquier condición, ya sea de noche, con mal tiempo o en aguas profundas.
+            </p>
+
+            <p>
+                Para ello, analizamos largas grabaciones de audios submarinos, identificando y clasificando los diferentes sonidos que conforman el <strong>paisaje sonoro</strong> marino:
+                <ul>
+                    <li><strong>Biofónicos</strong>: silbidos de delfines, clicks de cachalotes…</li>
+                    <li><strong>Antropogénicos</strong>: motores de barcos, buzos, sonar, etc.</li>
+                    <li><strong>Geofónicos</strong>: viento, lluvia, oleaje…</li>
+                </ul>
+            </p>
+
+            <p>
+                El sonido puede visualizarse mediante un <strong>espectrograma</strong>, una representación gráfica que permite estudiar un audio no solo auditivamente, sino también de forma visual.
+            </p>
+
+            <figure class="spectrogram">
+                <img src="assets/images/service_sam/spec_dolphin_chat.png" alt="Espectrograma de un delfín mular en entorno silencioso">
+                <figcaption>Espectrograma de un delfín mular (<em>Tursiops truncatus</em>) registrado en un entorno con bajo nivel de ruido.</figcaption>
+            </figure>
+
+            <p>
+                Sin embargo, el <strong>Estrecho de Gibraltar</strong> es una de las zonas marítimas más ruidosas del planeta. La elevada presencia de embarcaciones y actividad humana genera un paisaje sonoro complejo, donde los sonidos se solapan y resultan fácilmente confundibles.
+            </p>
+
+            <p>
+                En estos casos, no basta con detectar un silbido o un click: es necesario analizar los fragmentos anteriores y posteriores, buscar patrones, y diferenciar si el sonido tiene origen <strong>biológico</strong> o <strong>antropogénico</strong> para asegurar su correcta clasificación.
+            </p>
+
+            <p>
+                Además, enfrentamos el desafío de que muchas veces <strong>no podemos identificar con certeza la especie</strong> emisora del sonido. Solo es posible distinguir si su origen es natural (biofónico) o humano (antropogénico) y el tipo de sonido (silbido, embarcación, ...).
+            </p>
+
+            <figure class="spectrogram">
+                <img src="assets/images/service_sam/Silbido con moan 01.webp" alt="Espectrograma de silbido en entorno ruidoso del Estrecho de Gibraltar">
+                <figcaption>Ejemplo de espectrograma en el Estrecho de Gibraltar con un silbido en un entorno acústicamente complejo.</figcaption>
+            </figure>
+        </section>
+
+        <!-- Sección de aves -->
+        <section>
+            <h2>Estudio de aves</h2>
+            <p>
+            En paralelo, el proyecto también estudia las aves a través de varios métodos complementarios. 
+            Se han instalado grabadoras acústicas pasivas en distintas localizaciones de la provincia de Cádiz 
+            con el objetivo de construir mapas de presencia/ausencia de especies. Nos gustaría saber de todas las posibles aves cuáles están presentes, en qué momentos y los casos en los que aparece alguna que no es típica para el momento del año y localización. Así se podrán comparar ambos puntos y estudiar cuál es más interesante para las aves para la migración y cambios en sus comportamientos.
+            </p>
+            <p>
+            También se utilizan dispositivos GPS instalados en tres especies con diferentes grados de adaptación 
+            a entornos antropizados, para analizar patrones de movimiento y uso del hábitat. 
+            </p>
+            <p>
+            Además, se ha desplegado un radar para monitorizar el flujo migratorio de aves 
+            a través del Estrecho de Gibraltar y calcular su <em>migration rate</em>.
+            </p>
+        
+            <!-- Imagen radar -->
+            <figure class="spectrogram">
+            <img src="assets/images/service_sam/radar.png" alt="Visualización de datos del radar" class="radar-img">
+            <figcaption>Visualización de los datos del radar utilizados para estudiar la migración de aves.</figcaption>
+            </figure>
+        </section>
+
+        <!-- Sección de inteligencia artificial -->
+        <section>
+            <h2>Aplicación de la Inteligencia Artificial</h2>
+            <p>
+                Todas estas tecnologías permiten obtener información de forma remota, continua y en lugares poco accesibles. 
+                Sin embargo, uno de los grandes retos es el volumen masivo de datos generado y la necesidad de desarrollar 
+                herramientas que permitan automatizar su análisis para extraer información ecológica relevante de forma 
+                eficiente y precisa.
+            </p>
+        
+            <p>
+            Lo ideal es diseñar estrategias de procesamiento que permitan escalar el análisis de estas fuentes 
+            heterogéneas de información. Aquí es donde entra en juego la inteligencia artificial.
+            </p>
+        
+            <h3>Acústica submarina</h3>
+            <p>
+            El objetivo es desarrollar clasificadores automáticos capaces de analizar grabaciones submarinas y detectar:
+            </p>
+            <ul>
+            <li>En qué parte del audio hay un silbido o un <em>click</em> y a qué especie podría pertenecer el sonido</li>
+            <li>Si el sonido es de origen antropogénico, biológico o geofónico</li>
+            <li>El rango frecuencial de cada señal</li>
+            </ul>
+        
+            <h3>Acústica terrestre</h3>
+            <p>
+            En el caso de las aves, los objetivos del análisis automático son:
+            </p>
+            <ul>
+            <li>Detectar la presencia o ausencia de especies</li>
+            <li>Ampliar el análisis hacia estimaciones de abundancia</li>
+            <li>Mejorar la clasificación de vocalizaciones en entornos complejos</li>
+            </ul>
+        
+            <h3>Radar de vigilancia aérea</h3>
+            <p>
+            Para el radar, queremos combinar los datos con grabadoras acústicas. 
+            Esto permite ayudar en la clasificación de las detecciones del radar y asociar las trazas de vuelo 
+            con vocalizaciones, lo que podría permitir identificar no sólo el número de individuos, 
+            sino también a qué especie pertenecen.
+            </p>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2025 SEANIMALMOVE. Todos los derechos reservados.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

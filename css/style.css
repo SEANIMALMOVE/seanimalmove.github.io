@@ -271,3 +271,52 @@ a:hover {
 .news-item a:hover {
     background-color: #0056b3;
 }
+
+
+
+
+
+
+
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+}
+
+.profile-container img.team-photo {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #005b66; /* un color acorde con temática marina */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.profile-text {
+    flex: 1;
+    min-width: 260px;
+}
+
+.profile-text h2 {
+    font-size: 1.8rem;
+    color: #005b66;
+    margin-bottom: 0.5rem;
+}
+
+.profile-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.spectrogram {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem auto;
+    text-align: center;
+}
